@@ -9,8 +9,6 @@
     <title>江西盈科行网络信息股份有限公司</title>
     <link href="./assets/demo/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/demo/demo.css" rel="stylesheet">
-    <link href="./assets/css/swiper-3.4.2.min.css" rel="stylesheet">
-    <link href="./assets/css/animate.css" rel="stylesheet">
 </head>
 <style type="text/css">
 @media (min-width: 1200px) {
@@ -20,199 +18,225 @@
     }
 }
 
-.col-md-12,
-.col-md-4,
-.col-md-5,
-.col-md-7,
-.col-md-8,
-.col-md-6,
-.col-md-9,
-.col-md-3,
-.col-md-2,
-.col-md-10 {
-    padding: 0px;
-}
-
 p {
     margin: 0px;
 }
-.box{
+
+.box {
     height: 600px;
     display: block;
-    width:100%;
+    width: 100%;
 }
-.idx_bannerbox{
+
+.idx_bannerbox {
     width: 100%;
     min-width: 1200px;
 }
 
 
 
-        .slideTxtBox{ width: 550px;
+.slideTxtBox {
+    width: 550px;
     height: 400px;
     margin-left: 25px;
     margin-right: 25px;
-    background: #ffffff;  }
-        .slideTxtBox .hd{height: 64px;
+    background: #ffffff;
+}
+
+.slideTxtBox .hd {
+    height: 64px;
     border-bottom: 1px #e1e1e1 solid;
-    position: relative;}
-        .slideTxtBox .hd ul{list-style: none;margin: 0px;}
-        .slideTxtBox .hd ul li{ float:left;margin: 0;
+    position: relative;
+}
+
+.slideTxtBox .hd ul {
+    list-style: none;
+    margin: 0px;
+}
+
+.slideTxtBox .hd ul li {
+    float: left;
+    margin: 0;
     padding: 22px 15px 22px 15px!important;
     color: #666666;
-    font-size: 16px;}
-        .slideTxtBox .hd ul li.on{color:#1284fd;}
-        .slideTxtBox .bd ul{ padding:15px;  zoom:1;  }
-        .slideTxtBox .bd li{ height:24px; line-height:24px;   }
-        .slideTxtBox .bd li .date{ float:right; color:#999;  }
+    font-size: 16px;
+}
 
-    .header {
-        position: relative;
-        width: 100%;
-        background: url(./assets/demo/eath.png) center bottom no-repeat;
-        height: 600px;
-        overflow: hidden;
-    }
+.slideTxtBox .hd ul li.on {
+    color: #1284fd;
+}
 
-    .header>canvas {
-         position: absolute;
-        width: 1920px;
-        height: 100%;
-        left: 50%;
-        margin-left: -960px;
-    }
+.slideTxtBox .bd ul {
+    padding: 15px;
+    zoom: 1;
+}
 
-    .bg {
-        width: 100%;
-        height: 600px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: url(./assets/demo/banner_video_img.jpg) center center no-repeat
-    }
+.slideTxtBox .bd li {
+    height: 24px;
+    line-height: 24px;
+}
 
-    video {
-        position: absolute;
-        width: 100%;
-        left: 50%;
-        margin-left: -50%;
-    }
+.slideTxtBox .bd li .date {
+    float: right;
+    color: #999;
+}
 
-    .mask {
-        width: 100%;
-        height: 600px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: #000;
-        opacity: .4;
-        filter: alpha(opacity=40);
-    }
+.header {
+    position: relative;
+    width: 100%;
+    background: url(./assets/demo/eath.png) center bottom no-repeat;
+    height: 600px;
+    overflow: hidden;
+}
 
-    .logo {
-        width: 446px;
-        height: 46px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -223px;
-        margin-top: -123px;
-        background: url(../images/index/banner_logo.png) no-repeat;
-        cursor: pointer;
-    }
+.header>canvas {
+    position: absolute;
+    width: 1920px;
+    height: 100%;
+    left: 50%;
+    margin-left: -960px;
+}
 
-    .text {
-        width: 100%;
-        height: 135px;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        margin-top: -67.5px;
-        text-align: center;
-        color: #fff;
-        font-size: 90px;
-        cursor: default;
-    }
+.bg {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(./assets/demo/banner_video_img.jpg) center center no-repeat
+}
 
-    .banner_video {
-        width: 100%;
-        position: relative;
-        opacity: 1;
-        display: block;
-        z-index: 2;
-        height: 600px;
-    }
-    .banner{
-        padding: 0;
-        margin: 0;
-        position: relative;
-        zoom: 1;
-        border-radius: 4px; 
-        width: 100%;
-        height: 600px;
-        overflow: hidden;
-    }   
-    .banner ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    .bg_eath{
-        width: 100%;
-        float: left;
-        margin-right: -100%;
-        position: relative;
-        display: block;
-        opacity: 1;
-        z-index: 2;
-        -webkit-transition: opacity .5s ease-in;
-    }
-    .bg_video{
-        width: 100%;
-        float: left;
-        margin-right: -100%;
-        position: relative;
-        display: block;
-        opacity: 0;
-        z-index: 1;
-        -webkit-transition: opacity .5s ease-in;
-    }
-    .banner_tb{
-        width: 100%;
-        position: absolute;
-        bottom: 50px;
-        left: 0;
-        z-index: 2;
-    }
-    .banner_tb ul{
-        width: 100%;
-        position: absolute;
-        bottom: -40px;
-        text-align: center;
-    }
-    .banner_tb li{
-        margin: 0 6px;
-        display: inline-block;
-        zoom: 1;
-    }
-    .banner_tb li a{
-        width: 8px;
-        height: 8px;
-        background: #FFF;
-        opacity: .35;
-        filter: alpha(opacity=35);
-        -webkit-transition: width .4s ease-in;
-        display: block;
-        cursor: pointer;
-        text-indent: -9999px;
-        border-radius: 20px;
-    }
-    .banner_tb .on{
-        width: 45px;
-        background: #FFF;
-        opacity: 1;
-        cursor: default;
-    }
+video {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+}
+
+.mask {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+
+.logo {
+    width: 446px;
+    height: 46px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -223px;
+    margin-top: -123px;
+    background: url(../images/index/banner_logo.png) no-repeat;
+    cursor: pointer;
+}
+
+.text {
+    width: 100%;
+    height: 135px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -67.5px;
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    cursor: default;
+}
+
+.banner_video {
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    height: 600px;
+}
+
+.banner {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    zoom: 1;
+    border-radius: 4px;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.banner ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bg_eath {
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    display: block;
+    opacity: 1;
+    z-index: 2;
+    -webkit-transition: opacity .5s ease-in;
+}
+
+.bg_video {
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    display: block;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity .5s ease-in;
+}
+
+.banner_tb {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    z-index: 2;
+}
+
+.banner_tb ul {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+}
+
+.banner_tb li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.banner_tb li a {
+    width: 8px;
+    height: 8px;
+    background: #FFF;
+    opacity: .35;
+    filter: alpha(opacity=35);
+    -webkit-transition: width .4s ease-in;
+    display: block;
+    cursor: pointer;
+    text-indent: -9999px;
+    border-radius: 20px;
+}
+
+.banner_tb .on {
+    width: 45px;
+    background: #FFF;
+    opacity: 1;
+    cursor: default;
+}
 </style>
 
 <body>
@@ -333,14 +357,14 @@ p {
     </nav>
     <!-- 轮播图 -->
     <div class="idx_bannerbox">
-        <!-- <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+        <div class="banner">
+            <ul>
+                <li class="bg_eath">
                     <div class="header">
-                        <canvas id="starCanvas" width="1920" height="1000"></canvas>
+                        <canvas id="starCanvas"></canvas>
                     </div>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li class="bg_video">
                     <div class="banner_video">
                         <div class="bg"></div>
                         <video src="./assets/demo/video1.mp4" loop autoplay preload></video>
@@ -348,38 +372,9 @@ p {
                         <div class="logo"></div>
                         <div class="text">青春无畏 冲动不止</div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box" style="background-image: url(./assets/img/banner.png);background-repeat: no-repeat;background-position: center center; ">
-                    </div>
-                </div>
-                
-            </div>
-            <div class="swiper-pagination displayNone"></div>
-            <div class="swiper-button-next swiper-button-white displayNone"></div>
-            <div class="swiper-button-prev swiper-button-white displayNone"></div>
-        </div> -->
-
-        <div class="banner">
-           <ul>
-               <li class="bg_eath">
-                   <div class="header">
-                        <canvas id="starCanvas"></canvas>
-                    </div>
-               </li>
-               <li class="bg_video">
-                   <div class="banner_video">
-                        <div class="bg"></div>
-                        <video src="./assets/demo/video1.mp4" loop autoplay preload></video>
-                        <div class="mask"></div>
-                        <div class="logo"></div>
-                        <div class="text">青春无畏 冲动不止</div>
-                    </div>
-               </li>
-           </ul> 
+                </li>
+            </ul>
         </div>
-
-        
         <div class="banner_tb">
             <ul>
                 <li><a href="javascript:;" class="on"></a></li>
@@ -426,148 +421,7 @@ p {
                         <p class="about_ykh_word">企业愿景：做专做强，共创共赢</p>
                     </div>
                 </div>
-
-
-                <!-- <div class="pull-left company_dynamic">
-                    <ul class="company_dynamic_list" role="tablist">
-                        <li class="active"><a href="#gsxw" data-toggle="tab" class="company_dynamic_link pull-left">公司新闻</a></li>
-                        <li><a href="#hydt" data-toggle="tab" class="company_dynamic_link pull-left">行业动态</a></li>
-                        <li><a href="#gzysy" data-toggle="tab" class="company_dynamic_link pull-left">关注与视野</a></li>
-                        <li><a href="#mtzy" data-toggle="tab" class="company_dynamic_link pull-left">媒体摘要</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="gsxw">
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">03</h4>
-                                    <p class="tab_content_date">2017-02</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">12</h4>
-                                    <p class="tab_content_date">2017-22</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">21</h4>
-                                    <p class="tab_content_date">2017-11</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="tab-pane" id="hydt">
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">20</h4>
-                                    <p class="tab_content_date">2017-01</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">05</h4>
-                                    <p class="tab_content_date">2017-12</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">12</h4>
-                                    <p class="tab_content_date">2017-10</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="gzysy">
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">07</h4>
-                                    <p class="tab_content_date">2017-05</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">26</h4>
-                                    <p class="tab_content_date">2017-01</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">23</h4>
-                                    <p class="tab_content_date">2017-11</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="mtzy">
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">06</h4>
-                                    <p class="tab_content_date">2017-09</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">15</h4>
-                                    <p class="tab_content_date">2017-07</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                            <div class="tab_content clearfix">
-                                <div class="tab_data">
-                                    <h4 class="tab_content_day">24</h4>
-                                    <p class="tab_content_date">2017-05</p>
-                                </div>
-                                <div class="tab_news">
-                                    <h4 class="tab_content_title">总部迁移盈科大夏，谱写时代辉煌待启</h4>
-                                    <p class="tab_content_news">2015年展望在即，盈科行规模再三壮大。为适应企业迅猛发展的需要，提升企业形象，盈科行正加快自建办公楼“盈科大夏”的工作进度。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-
+                
                 <div class="slideTxtBox pull-left">
                     <div class="hd">
                         <ul class="clearfix">
@@ -607,13 +461,6 @@ p {
                         </ul>
                     </div>
                 </div>
-        
-
-
-
-
-
-
                 <div class="pull-right busines">
                     <div>
                         <h4 class="busines_title">商业合作</h4>
@@ -668,10 +515,8 @@ p {
         </div>
     </div>
     <!-- 尾部菜单 -->
-    <footer>     
+    <footer>
     </footer>
-    <!-- <script src="./assets/js/swiper-3.4.2.jquery.min.js"></script> -->
-    <!-- <script src="./assets/js/swiper.animate1.0.2.min.js"></script> -->
     <script src="./assets/demo/jquery.min.js"></script>
     <script src="./assets/demo/jquery.SuperSlide.2.1.1.js"></script>
     <script src="./assets/demo/swiper-3.4.2.jquery.min.js"></script>
@@ -679,178 +524,179 @@ p {
     <script src="./assets/demo/demo.js"></script>
     <script src="./shared/footer.js"></script>
     <script type="text/javascript">
-        jQuery(".slideTxtBox").slide();
-        $(function(){
-
-            var banner_li = $('.banner li');
-            $('.banner_tb li a').click(function(){
-                $(this).addClass('on').parent().siblings().children().removeClass('on');
-                index = $(this).parent().index();
-                bannerSwitch(index);
-            })
-
-            function bannerSwitch (index){
-                $(banner_li).eq(index).css({'opacity':'1','z-index':'2'}).siblings().css({'opacity':'0','z-index':'1'});
-            }
+    jQuery(".slideTxtBox").slide();
+    $(function() {
+        //轮播图特效
+        var banner_li = $('.banner li');
+        $('.banner_tb li a').click(function() {
+            $(this).addClass('on').parent().siblings().children().removeClass('on');
+            index = $(this).parent().index();
+            bannerSwitch(index);
         })
-    </script>  
+
+        function bannerSwitch(index) {
+            $(banner_li).eq(index).css({ 'opacity': '1', 'z-index': '2' }).siblings().css({ 'opacity': '0', 'z-index': '1' });
+        }
+    })
+    </script>
     <script>
-        // 星星效果
-        (function() {
-            if (!window.addEventListener) return;
+    // 星星效果
+    (function() {
+        if (!window.addEventListener) return;
 
-            var canvas = document.querySelector("#starCanvas");
-            var context = canvas.getContext("2d");
+        var canvas = document.querySelector("#starCanvas");
+        var context = canvas.getContext("2d");
 
-            var stars = {},
-                particleIndex = 0,
-                settings = {
-                    r: 900, // 根据是设计稿确定的轨迹半径
-                    height: 260, // 露出的圆弧的高度
-                    density: 500,
-                    maxLife: 100,
-                    groundLevel: canvas.height,
-                    leftWall: 0,
-                    rightWall: canvas.width,
-                    alpha: 0.0,
-                    maxAlpha: 1
-                };
-
-            var getMinRandom = function() {
-                var rand = Math.random();
-                // step的大小决定了星星靠近地球的聚拢程度，
-                // step = Math.ceil(2 / (1 - rand))就聚拢很明显
-                var step = Math.ceil(1 / (2 - rand));
-                var arr = [];
-                for (var i = 0; i < step; i++) {
-                    arr.push(Math.random());
-                }
-
-                return Math.min.apply(null, arr);
+        var stars = {},
+            particleIndex = 0,
+            settings = {
+                r: 900, // 根据是设计稿确定的轨迹半径
+                height: 260, // 露出的圆弧的高度
+                density: 500,
+                maxLife: 100,
+                groundLevel: canvas.height,
+                leftWall: 0,
+                rightWall: canvas.width,
+                alpha: 0.0,
+                maxAlpha: 1
             };
 
-            function resizeCanvas() {
-                canvas.width = 1920;
-                canvas.height = 800;
-                settings.rightWall = canvas.width;
-                settings.groundLevel = canvas.height;
-                settings.height = 260 + (canvas.height - 800) / 2;
-                redraw();
+        var getMinRandom = function() {
+            var rand = Math.random();
+            // step的大小决定了星星靠近地球的聚拢程度，
+            // step = Math.ceil(2 / (1 - rand))就聚拢很明显
+            var step = Math.ceil(1 / (2 - rand));
+            var arr = [];
+            for (var i = 0; i < step; i++) {
+                arr.push(Math.random());
             }
 
-            resizeCanvas();
+            return Math.min.apply(null, arr);
+        };
 
-            window.addEventListener('resize', resizeCanvas);
+        function resizeCanvas() {
+            canvas.width = 1920;
+            canvas.height = 800;
+            settings.rightWall = canvas.width;
+            settings.groundLevel = canvas.height;
+            settings.height = 260 + (canvas.height - 800) / 2;
+            redraw();
+        }
 
-            function redraw() {
-                context.clearRect(0, 0, canvas.width, canvas.height);
-                context.fillStyle = "rgba(0,0,0,0)";
-                context.fillRect(0, 0, canvas.width, canvas.height);
-            }
+        resizeCanvas();
 
-            function Star() {
-                // 圆的轨迹方程式为：(x-a)²+(y-b)²=r²
-                // 因此，已知x, 则y = Math.sqrt(r² - (x-a)²) + b;
-                // 其中，圆心是(a, b)
-                // 在本例子中
-                // 圆心坐标是(canvas.width/2, canvas.height - 600 + r);
-                var a = canvas.width / 2,
-                    b = canvas.height - settings.height + settings.r;
-                // 因此，已知横坐标随机
-                this.x = Math.floor(Math.random() * canvas.width);
-                // 纵坐标需要在圆弧以上
-                // 越往上，越稀疏
-                this.offsety = getMinRandom() * (canvas.height - settings.height);
-                this.y = b - Math.sqrt(settings.r * settings.r - (this.x - a) * (this.x - a)) - this.offsety;
+        window.addEventListener('resize', resizeCanvas);
 
-                this.vx = Math.random() * 0.2 + 0.15; // 水平偏移，也是移动速度
+        function redraw() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.fillStyle = "rgba(0,0,0,0)";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        }
 
-                // 星星的尺寸
-                this.particleSize = 1.2 + (Math.random() + 0.1 / 4);
-                particleIndex++;
-                stars[particleIndex] = this;
-                this.alpha = 0.0;
-                this.maxAlpha = 0.2 + (this.y / canvas.height) * Math.random() * 0.8;
-                this.alphaAction = 1;
-            }
+        function Star() {
+            // 圆的轨迹方程式为：(x-a)²+(y-b)²=r²
+            // 因此，已知x, 则y = Math.sqrt(r² - (x-a)²) + b;
+            // 其中，圆心是(a, b)
+            // 在本例子中
+            // 圆心坐标是(canvas.width/2, canvas.height - 600 + r);
+            var a = canvas.width / 2,
+                b = canvas.height - settings.height + settings.r;
+            // 因此，已知横坐标随机
+            this.x = Math.floor(Math.random() * canvas.width);
+            // 纵坐标需要在圆弧以上
+            // 越往上，越稀疏
+            this.offsety = getMinRandom() * (canvas.height - settings.height);
+            this.y = b - Math.sqrt(settings.r * settings.r - (this.x - a) * (this.x - a)) - this.offsety;
 
-            Star.prototype.draw = function() {
-                // 横坐标移动
-                this.x += this.vx;
-                // 根据切线方向进行偏移
-                // y坐标
-                this.y = canvas.height - settings.height + settings.r - Math.sqrt(settings.r * settings.r - (this.x - canvas.width / 2) * (this.x - canvas.width / 2)) - this.offsety;
+            this.vx = Math.random() * 0.2 + 0.15; // 水平偏移，也是移动速度
 
-                // 透明度慢慢起来
-                if (this.alphaAction == 1) {
-                    if (this.alpha < this.maxAlpha) {
-                        this.alpha += 0.025;
-                    } else {
-                        this.alphaAction = -1;
-                    }
+            // 星星的尺寸
+            this.particleSize = 1.2 + (Math.random() + 0.1 / 4);
+            particleIndex++;
+            stars[particleIndex] = this;
+            this.alpha = 0.0;
+            this.maxAlpha = 0.2 + (this.y / canvas.height) * Math.random() * 0.8;
+            this.alphaAction = 1;
+        }
+
+        Star.prototype.draw = function() {
+            // 横坐标移动
+            this.x += this.vx;
+            // 根据切线方向进行偏移
+            // y坐标
+            this.y = canvas.height - settings.height + settings.r - Math.sqrt(settings.r * settings.r - (this.x - canvas.width / 2) * (this.x - canvas.width / 2)) - this.offsety;
+
+            // 透明度慢慢起来
+            if (this.alphaAction == 1) {
+                if (this.alpha < this.maxAlpha) {
+                    this.alpha += 0.025;
                 } else {
-                    if (this.alpha > 0.2) {
-                        this.alpha -= 0.01;
-                    } else {
-                        this.alphaAction = 1;
-                    }
+                    this.alphaAction = -1;
                 }
-
-                if (this.x + (this.particleSize * 2) >= settings.rightWall) {
-                    // x到左侧
-                    this.x = this.x - settings.rightWall;
+            } else {
+                if (this.alpha > 0.2) {
+                    this.alpha -= 0.01;
+                } else {
+                    this.alphaAction = 1;
                 }
-
-                // 绘制星星
-                context.beginPath();
-                context.fillStyle = "rgba(255,255,255," + this.alpha.toString() + ")";
-                context.arc(this.x, this.y, this.particleSize, 0, Math.PI * 2, true);
-                context.closePath();
-                context.fill();
             }
 
-            function render() {
-
-                redraw();
-
-                // 星星的数目
-                // IE下CUP性能有限，数目小
-                var length = 400;
-                if (!history.pushState) {
-                    // IE9
-                    length = 300;
-                } else if (document.msHidden != undefined) {
-                    // IE10+
-                    length = 400;
-                }
-
-                if (Object.keys(stars).length > length) {
-                    settings.density = 0;
-                }
-
-                for (var i = 0; i < settings.density; i++) {
-                    if (Math.random() > 0.97) {
-                        new Star();
-                    }
-                }
-
-                // 星星实时移动
-                for (var i in stars) {
-                    stars[i].draw();
-                }
-
-                requestAnimationFrame(render);
+            if (this.x + (this.particleSize * 2) >= settings.rightWall) {
+                // x到左侧
+                this.x = this.x - settings.rightWall;
             }
 
-            if (!window.requestAnimationFrame) {
-                window.requestAnimationFrame = function(fn) {
-                    setTimeout(fn, 17);
-                };
+            // 绘制星星
+            context.beginPath();
+            context.fillStyle = "rgba(255,255,255," + this.alpha.toString() + ")";
+            context.arc(this.x, this.y, this.particleSize, 0, Math.PI * 2, true);
+            context.closePath();
+            context.fill();
+        }
+
+        function render() {
+
+            redraw();
+
+            // 星星的数目
+            // IE下CUP性能有限，数目小
+            var length = 400;
+            if (!history.pushState) {
+                // IE9
+                length = 300;
+            } else if (document.msHidden != undefined) {
+                // IE10+
+                length = 400;
             }
 
-            render();
+            if (Object.keys(stars).length > length) {
+                settings.density = 0;
+            }
 
-        })();
+            for (var i = 0; i < settings.density; i++) {
+                if (Math.random() > 0.97) {
+                    new Star();
+                }
+            }
+
+            // 星星实时移动
+            for (var i in stars) {
+                stars[i].draw();
+            }
+
+            requestAnimationFrame(render);
+        }
+
+        if (!window.requestAnimationFrame) {
+            window.requestAnimationFrame = function(fn) {
+                setTimeout(fn, 17);
+            };
+        }
+
+        render();
+
+    })();
     </script>
 </body>
+
 </html>

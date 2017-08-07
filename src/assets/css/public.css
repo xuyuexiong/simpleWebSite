@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 11:23:53
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-08-04 17:52:26
+* @Last Modified time: 2017-08-07 16:00:22
 */
 
 html,
@@ -112,12 +112,11 @@ p {
 
 .navline {
     position: absolute;
-    display: block;
+    display: none;
     width: 94px;
     height: 100px;
     background: #2683f5;
     top: 0;
-    left: 0px;
     z-index: 1;
     transition: width .6s;
 }
@@ -148,72 +147,41 @@ p {
 
 .pr {
     position: relative;
+    height: 60px;
 }
 
 .inner_nav {
     list-style: none;
-    position: absolute;
+    padding: 0;
+    margin:  0;
     top: 0px;
     left: 0px;
     z-index: 999;
-    width: 700px;
 }
 
 .inner_nav li {
     float: left;
     line-height: 60px;
-    margin: 0 16px;
+    margin: 0 18px;
 }
 
 .inner_nav li a {
+	float: left;
     color: #ffffff;
     font-size: 14px;
     display: block;
 }
-
+.inner_nav .second_active{
+	color: #01ccff;
+}
+.inner_nav li a:hover{
+	color: #01ccff;
+}
 .pr>div {
     display: none;
     position: absolute;
     top: 0px;
 }
-
-.aNav1 {
-    left: 200px;
-}
-
-.aNav2 {
-    left: 290px;
-}
-
-.aNav3 {
-    left: 380px;
-}
-
-.aNav4 {
-    left: 500px;
-}
-
-.aNav5 {
-    left: 590px;
-}
-
-.aNav6 {
-    left: 710px;
-}
-
-.aNav7 {
-    left: 460px;
-}
-
-.aNav8 {
-    left: 620px;
-}
-
-.aNav9 {
-    left: 835px;
-}
-
-
 
 
 

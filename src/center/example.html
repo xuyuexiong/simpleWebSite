@@ -54,7 +54,7 @@
         <!-- 二级菜单 -->
         <div class="second_nav">
             <div class="sNav container pr">
-                <div class="aNav1">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li><a href="">公司简介</a></li>
                         <li><a href="">组织架构</a></li>
@@ -64,7 +64,7 @@
                         <li><a href="">公关视频</a></li>
                     </ul>
                 </div>
-                <div class="aNav2">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li><a href="">公司新闻</a></li>
                         <li><a href="">行业动态</a></li>
@@ -72,7 +72,7 @@
                         <li><a href="">公司新闻</a></li>
                     </ul>
                 </div>
-                <div class="aNav3">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li><a href="">盈科行营销代理</a></li>
                         <li><a href="">O2O房地产众销</a></li>
@@ -81,25 +81,25 @@
                         <li><a href="">地铁广告代理销售</a></li>
                     </ul>
                 </div>
-                <div class="aNav4">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li></li>
                     </ul>
                 </div>
-                <div class="aNav5">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li><a href="">课程安排</a></li>
                         <li><a href="">培训活动</a></li>
                     </ul>
                 </div>
-                <div class="aNav6">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li><a href="">志愿者活动</a></li>
                         <li><a href="">社会责任报告</a></li>
                         <li><a href="">盈科行公益基金会</a></li>
                     </ul>
                 </div>
-                <div class="aNav7">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li><a href="">加入盈科行</a></li>
                         <li><a href="">职业发展</a></li>
@@ -108,7 +108,7 @@
                         <li><a href="">员工关怀</a></li>
                     </ul>
                 </div>
-                <div class="aNav8">
+                <div>
                     <ul class="inner_nav clearfix">
                         <li><a href="">服务简介</a></li>
                         <li><a href="">客服体系</a></li>
@@ -116,9 +116,9 @@
                         <li><a href="">投诉建议</a></li>
                     </ul>
                 </div>
-                <div class="aNav9">
+                <div>
                     <ul class="inner_nav clearfix">
-                        <li><a href="">公司总部</a></li>
+                        <li><a href="" class="second_active">公司总部</a></li>
                         <li><a href="">投资者关系</a></li>
                         <li><a href="">客户服务</a></li>
                     </ul>
@@ -161,7 +161,7 @@
     </footer>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- <script src="../assets/js/bootstrap.min.js"></script> -->
     <script src="../assets/js/public.js"></script>
     <script src="../shared/footer.js"></script>
     <script type="text/javascript">
@@ -169,7 +169,10 @@
     </script>
     <script type="text/javascript">
         $(function(){
-            $('.navlist')
+            var navLeft = $('.nav_active').position().left;
+            $('.navline').css({'left':navLeft,'display':'block'});
+            $('.sNav div').eq($(".navlist li").length-1).css('right','0');
+
         })
     </script>
 </body>

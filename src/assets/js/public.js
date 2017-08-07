@@ -2,11 +2,12 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 17:14:55
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-08-04 17:35:00
+* @Last Modified time: 2017-08-07 15:49:04
 */
 
 $(function(){
 	//导航条高亮
+    
     $('.navlist li').hover(function() {
         $('.navlist li').removeClass('nav_active');
         $(this).addClass('current').siblings().removeClass('current');
@@ -14,12 +15,22 @@ $(function(){
         navlinewidth = $(this).width();
         offsetli = $(this).position().left;
         offsettop = $(this).position().top;
+        navWidth = $('.first_nav').width();
+        navRight = $('.first_nav').width()-offsetli-$(this).width();
+        index = $('.navlist li').index(this);
+
+        //二级菜单位置
+        if(index<5){
+        	$('.sNav div').eq(index).css('left',1200-navWidth+offsetli);
+        }else if(index>=5 && index<9){
+        	$('.sNav div').eq(index).css('right',navRight);
+        }
 
         $(".navline").css('top', offsettop);
         $(".navline").css({ 'width': navlinewidth }).stop().animate({ 'left': offsetli }, 200);
 
     });
-
+    
     //二级菜单
     var li = $(".navlist li");
     var div = $(".sNav>div");
