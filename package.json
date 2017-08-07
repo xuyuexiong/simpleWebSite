@@ -1,0 +1,16 @@
+{
+    "name": "angular2",
+    "version": "1.0.0",
+    "author": "zhanggongze",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": "",
+        "gulp": ""
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.6"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
