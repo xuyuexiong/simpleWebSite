@@ -19,6 +19,8 @@ a:hover {
 
 
 
+
+
 /*导航栏*/
 
 .navbg {
@@ -105,32 +107,24 @@ a:hover {
     transition: width .6s;
 }
 
-@media screen and (min-width: 1200px) {
-    .second_nav {
-        width: 100%;
-    }
-}
 
-@media screen and (max-width: 1200px) {
-    .pr {
-        min-width: 1200px;
-    }
-}
+   
 
 .second_nav {
-
-    background-color: rgba(45, 62, 80, 0.5);
+    background: #2d3e50;
     height: 50px;
     position: absolute;
     top: 80px;
     left: 0;
     z-index: 999;
     display: block;
+    width: 100%;
 }
 
 .pr {
     position: relative;
     height: 50px;
+    width: 1200px;
 }
 
 .inner_nav {
@@ -172,6 +166,8 @@ a:hover {
 
 
 
+
+
 /*轮播图*/
 
 .box {
@@ -187,52 +183,6 @@ a:hover {
 }
 
 
-
-.slideTxtBox {
-    width: 550px;
-    height: 400px;
-    margin-left: 25px;
-    margin-right: 25px;
-    background: #ffffff;
-}
-
-.slideTxtBox .hd {
-    height: 64px;
-    border-bottom: 1px #e1e1e1 solid;
-    position: relative;
-}
-
-.slideTxtBox .hd ul {
-    list-style: none;
-    margin: 0px;
-}
-
-.slideTxtBox .hd ul li {
-    float: left;
-    margin: 0;
-    padding: 22px 15px 22px 15px!important;
-    color: #666666;
-    font-size: 16px;
-}
-
-.slideTxtBox .hd ul li.on {
-    color: #1284fd;
-}
-
-.slideTxtBox .bd ul {
-    padding: 15px;
-    zoom: 1;
-}
-
-.slideTxtBox .bd li {
-    height: 24px;
-    line-height: 24px;
-}
-
-.slideTxtBox .bd li .date {
-    float: right;
-    color: #999;
-}
 
 .header {
     position: relative;
@@ -360,15 +310,15 @@ video {
     zoom: 1;
 }
 
-.banner_tb li a {
+.banner_tb li span{
     width: 8px;
     height: 8px;
     background: #FFF;
-    opacity: .35;
-    filter: alpha(opacity=35);
+    opacity: 0.35;
+    filter:Alpha(opacity=35);
+    cursor: pointer;
     -webkit-transition: width .4s ease-in;
     display: block;
-    cursor: pointer;
     text-indent: -9999px;
     border-radius: 20px;
 }
@@ -377,8 +327,11 @@ video {
     width: 45px;
     background: #FFF;
     opacity: 1;
+    filter:Alpha(opacity=100)
     cursor: default;
 }
+
+
 
 
 
@@ -455,6 +408,8 @@ video {
 
 
 
+
+
 /*咨询中心*/
 
 .introduction {
@@ -494,14 +449,20 @@ video {
 }
 
 .about_ykh_info {
-    text-indent: 25px;
-    line-height: 22px;
+    text-indent: 20px;
+    line-height: 24px;
     padding: 20px 20px 0 20px;
 }
 
-.about_ykh_word {
-    font-size: 18px;
-    padding: 20px 0 0 20px;
+.about_ykh_more a {
+    color: #1284fd;
+    float: right;
+}
+
+.about_ykh_more a:link,
+.about_ykh_more a:visited {
+    text-decoration: none;
+    color: #1284fd;
 }
 
 .busines {
@@ -526,21 +487,29 @@ video {
 
 .busines_phone {
     font-size: 30px;
-    height: 30px;
-    line-height: 30px;
     color: #1284fd;
-    padding: 20px 0 10px 20px;
+    line-height: 50px;
+    padding: 10px 0 5px 20px;
 }
 
-.busines_prompt {
-    padding: 0 0 0 20px;
+.busines_phone span {
+    float: left;
+    padding-right: 10px;
 }
 
-.busines_address {
-    padding: 5px 0 25px 20px;
+.busines_words {
+    float: right;
+    color: #1284fd;
+    font-size: 18px;
+    padding-right: 25px;
+    width: 120px;
+    cursor: pointer;
 }
 
-.company_dynamic {
+
+
+
+.slideTxtBox {
     width: 550px;
     height: 400px;
     margin-left: 25px;
@@ -548,85 +517,53 @@ video {
     background: #ffffff;
 }
 
-.company_dynamic_list {
+.slideTxtBox .hd {
     height: 64px;
-    padding-left: 0px;
-    margin: 0px;
-    list-style: none;
-    border-bottom: 1px #e1e1e1 solid;
+    position: relative;
+    background: #e1e4e7;
 }
 
-.company_dynamic_link {
+.slideTxtBox .hd ul {
+    list-style: none;
+    margin: 0px;
+}
+
+.slideTxtBox .hd ul li {
+    float: left;
     margin: 0;
     padding: 22px 15px 22px 15px!important;
     color: #666666;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.company_dynamic_link:focus {
-    text-decoration: none;
+.slideTxtBox .hd ul li.on {
     color: #1284fd;
+    background: #ffffff;
 }
 
-.company_dynamic_link:hover {
-    color: #1284fd;
-}
-
-.company_dynamic_list>.active a {
-    color: #1284fd;
-}
-
-.tab_content {
-    height: 110px;
-    position: relative;
-}
-
-.tab_data {
-    padding-left: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 110px;
-}
-
-.tab_news {
-    position: absolute;
-    left: 73px;
-    top: 0;
-    height: 110px;
-    padding-left: 35px;
-}
-
-.tab_content_day {
-    font-size: 36px;
-    height: 40px;
-    line-height: 40px;
-    font-weight: normal;
-    color: #2d3e50;
+.slideTxtBox .bd ul {
+    padding: 0;
     margin: 0;
-    padding-top: 20px;
-    padding-left: 5px;
+    zoom: 1;
+    list-style: none;
 }
 
-.tab_content_date {
-    font-size: 14px;
-    color: #999999;
+.slideTxtBox .bd li {
+    padding: 15px 20px 15px 20px;
 }
 
-.tab_content_title {
+.bd_title {
     font-size: 18px;
-    font-weight: normal;
     color: #2d3e50;
-    margin: 0px;
-    padding-top: 15px;
-    padding-bottom: 10px;
 }
 
-.tab_content_news {
+.bd_content {
+    padding-top: 15px;
     font-size: 14px;
+    line-height: 22px;
     color: #999999;
 }
-
 
 
 
@@ -674,6 +611,8 @@ video {
 .partner_logo_bottom {
     padding-top: 60px;
 }
+
+
 
 
 

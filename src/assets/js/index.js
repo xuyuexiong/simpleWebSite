@@ -64,7 +64,7 @@ $(function() {
         var thisObj = $(this)
         var n = 0.2;
         time = setInterval(function() {
-            n = n + 0.02;
+            n = n + 0.03;
             thisObj.css("opacity", n);
             if (n > 1) {
                 clearInterval(time)
@@ -77,8 +77,8 @@ $(function() {
         $(this).css("opacity", 1);
     });
 
-
-    $.get('../../shared/demo_footer.html', function(data) {
+    //引入底部菜单
+    $.get('../../shared/footer.html', function(data) {
         $('footer').html(data);
     });
 
