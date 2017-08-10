@@ -89,6 +89,9 @@ $(function() {
     $.get('../../shared/demo_footer.html', function(data) {
         $('footer').html(data);
     });
+    // $.get('../../shared/message.html', function(data) {
+    //     $('.liuyan').html(data);
+    // });
 
     //移动端导航
     $('.hamburger').click(function() {
@@ -96,6 +99,9 @@ $(function() {
         $('.gnb_wrap').toggleClass('on');
 
     });
+
+
+    
 })
 
 //当改变窗口大小时，刷新页面

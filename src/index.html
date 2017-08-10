@@ -332,6 +332,11 @@ p {
     <!-- 尾部菜单 -->
     <footer>
     </footer>
+    <div id="liuyan">
+        <iframe src="./shared/message.html" scrolling="no" width="800" height="600" style="border: 0;" id="iframe" frameborder="0"></iframe>
+    </div>
+    <div id="business_zhezhao"></div>
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
@@ -355,6 +360,20 @@ p {
         function bannerSwitch(index) {
             $(banner_li).eq(index).css({ 'opacity': '1', 'z-index': '2' }).siblings().css({ 'opacity': '0', 'z-index': '1' });
         }
+
+        $('.busines_words').click(function() {
+
+            $('#business_zhezhao').css('display', 'block');
+            $('#liuyan').css({'width':'800px','height':'600px','display':'block'});
+            $('#iframe').css({'width':'800px','height':'600px'});
+
+        });
+
+        $('#business_zhezhao').click(function() {
+            $('iframe').attr('src','./shared/message.html');
+            $('#business_zhezhao').css('display', 'none');
+            $('#liuyan').css('display', 'none');
+        });
     })
     </script>
 </body>

@@ -1,9 +1,11 @@
-html,body{
+html,
+body {
     height: 100%;
 }
+
 body {
     background: #ffffff;
-    font-family: "微软雅黑",Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -13,6 +15,8 @@ body {
 a:hover {
     text-decoration: none;
 }
+
+
 
 
 /*导航栏*/
@@ -45,22 +49,27 @@ a:hover {
     display: block;
     height: 100px;
 }
-.logo img{
+
+.logo img {
     padding: 30px 0 30px 0;
 }
-.first_nav{
+
+.first_nav {
     position: relative;
-    float: left;    
+    float: left;
 }
+
 .navlist {
     position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.navlist li{
+
+.navlist li {
     float: left;
 }
+
 .navlist li a {
     padding: 0 15px 0 15px;
     line-height: 100px;
@@ -95,18 +104,21 @@ a:hover {
     left: 0px;
     z-index: 1;
 }
+
 @media screen and (min-width: 1200px) {
-    .second_nav{
+    .second_nav {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1200px) {
-    .pr{
+    .pr {
         min-width: 1200px;
     }
 }
+
 .second_nav {
-    
+
     background-color: rgba(45, 62, 80, 0.5);
     height: 60px;
     position: absolute;
@@ -118,7 +130,6 @@ a:hover {
 
 .pr {
     position: relative;
-    
 }
 
 .inner_nav {
@@ -185,6 +196,8 @@ a:hover {
 }
 
 
+
+
 /*轮播图*/
 
 .swiper-container {
@@ -244,6 +257,8 @@ a:hover {
 
 
 
+
+
 /*宣传片*/
 
 .content {
@@ -267,12 +282,15 @@ a:hover {
     padding-left: 0;
     padding-right: 0;
 }
-.video_bg>.clearfix{
+
+.video_bg>.clearfix {
     background: #ececec;
 }
-.video{
+
+.video {
     float: left;
 }
+
 .video_bg_a {
     padding: 40px 0 40px 40px;
 }
@@ -308,6 +326,8 @@ a:hover {
     margin: 0;
     color: #666666;
 }
+
+
 
 
 
@@ -350,14 +370,20 @@ a:hover {
 }
 
 .about_ykh_info {
-    text-indent: 25px;
-    line-height: 22px;
+    text-indent: 20px;
+    line-height: 24px;
     padding: 20px 20px 0 20px;
 }
 
-.about_ykh_word {
-    font-size: 18px;
-    padding: 20px 0 0 20px;
+.about_ykh_more a {
+    color: #1284fd;
+    float: right;
+}
+
+.about_ykh_more a:link,
+.about_ykh_more a:visited {
+    text-decoration: none;
+    color: #1284fd;
 }
 
 .busines {
@@ -382,21 +408,29 @@ a:hover {
 
 .busines_phone {
     font-size: 30px;
-    height: 30px;
-    line-height: 30px;
     color: #1284fd;
-    padding: 20px 0 10px 20px;
+    line-height: 50px;
+    padding: 10px 0 5px 20px;
 }
 
-.busines_prompt {
-    padding: 0 0 0 20px;
+.busines_phone span {
+    float: left;
+    padding-right: 10px;
 }
 
-.busines_address {
-    padding: 5px 0 25px 20px;
+.busines_words {
+    float: right;
+    color: #1284fd;
+    font-size: 18px;
+    padding-right: 25px;
+    width: 120px;
+    cursor: pointer;
 }
 
-.company_dynamic {
+
+
+
+.slideTxtBox {
     width: 550px;
     height: 400px;
     margin-left: 25px;
@@ -404,98 +438,74 @@ a:hover {
     background: #ffffff;
 }
 
-.company_dynamic_list {
+.slideTxtBox .hd {
     height: 64px;
-    padding-left: 0px;
-    margin: 0px;
-    list-style: none;
-    border-bottom: 1px #e1e1e1 solid;
+    position: relative;
+    background: #e1e4e7;
 }
 
-.company_dynamic_link {
+.slideTxtBox .hd ul {
+    list-style: none;
+    margin: 0px;
+}
+
+.slideTxtBox .hd ul li {
+    float: left;
     margin: 0;
     padding: 22px 15px 22px 15px!important;
     color: #666666;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.company_dynamic_link:focus {
-    text-decoration: none;
+.slideTxtBox .hd ul li.on {
     color: #1284fd;
+    background: #ffffff;
 }
 
-.company_dynamic_link:hover {
-    color: #1284fd;
-}
-
-.company_dynamic_list>.active a {
-    color: #1284fd;
-}
-
-.tab_content {
-    height: 110px;
-    position: relative;
-}
-.tab_data{
-    padding-left: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 110px;
-}
-.tab_news{
-    position: absolute;
-    left: 73px;
-    top: 0;
-    height: 110px;
-    padding-left: 35px;
-}
-.tab_content_day {
-    font-size: 36px;
-    height: 40px;
-    line-height: 40px;
-    font-weight: normal;
-    color: #2d3e50;
+.slideTxtBox .bd ul {
+    padding: 0;
     margin: 0;
-    padding-top: 20px;
-    padding-left: 5px;
+    zoom: 1;
+    list-style: none;
 }
 
-.tab_content_date {
-    font-size: 14px;
-    color: #999999;
+.slideTxtBox .bd li {
+    padding: 15px 20px 15px 20px;
 }
 
-.tab_content_title {
+.bd_title {
     font-size: 18px;
-    font-weight: normal;
     color: #2d3e50;
-    margin: 0px;
-    padding-top: 15px;
-    padding-bottom: 10px;
 }
 
-.tab_content_news {
+.bd_content {
+    padding-top: 15px;
     font-size: 14px;
+    line-height: 22px;
     color: #999999;
 }
+
+
 
 
 
 /*合作伙伴*/
 
 .partner {
-    background: url(../img/partner.png);
+    background: url(../img/index/partner.png);
     height: 549px;
     position: relative;
     z-index: 2;
     min-width: 1200px;
 }
-.partner_content{
+
+.partner_content {
     width: 1200px;
     padding-right: 0px;
     padding-left: 0px;
 }
+
 .partner_top {
     text-align: center;
     padding-top: 55px;
@@ -526,6 +536,8 @@ a:hover {
 
 
 
+
+
 /*底部菜单*/
 
 footer {
@@ -540,21 +552,25 @@ footer {
     height: 175px;
     background: #494952;
 }
-.footer_content{
+
+.footer_content {
     width: 1200px;
     padding-left: 0px;
     padding-right: 0px;
 }
-.footer_content_left{
+
+.footer_content_left {
     width: 800px;
     float: left;
     height: 175px;
 }
-.footer_content_right{
+
+.footer_content_right {
     width: 400px;
     float: left;
     height: 175px;
 }
+
 .footer_logo {
     padding-top: 40px;
 }
@@ -577,15 +593,18 @@ footer {
 .footer_nav_list li a:hover {
     text-decoration: underline;
 }
-.footer_number{
+
+.footer_number {
     float: left;
     height: 175px;
 }
-.footer_qr{
+
+.footer_qr {
     float: left;
     height: 175px;
     padding-left: 25px;
 }
+
 .footer_nav_number {
     padding-top: 35px;
 }
@@ -725,4 +744,35 @@ footer {
     color: #999999;
     font-size: 14px;
     text-align: center;
+}
+
+
+
+/*模态窗，留言板*/
+
+#business_zhezhao {
+    position: fixed;
+    background: #000000;
+    opacity: 0.3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+#liuyan {
+    position: fixed;
+    background: #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    display: none;
 }

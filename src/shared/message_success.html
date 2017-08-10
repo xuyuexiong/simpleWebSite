@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>提交成功</title>
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style type="text/css">
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        background-color: rgba(0, 0, 0, 0);
+        font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        width: 170px;
+        height: 50px;
+        /*border-radius: 6px;*/
+    }
+    .success {
+        background-color: rgba(0, 0, 0, 0.7);
+        background-color: #000000\9;
+        filter: Alpha(opacity=70);
+        margin: 0;
+        width: 170px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    @media \0screen\,
+    screen\9 {
+        /* 只支持IE6、7、8 */
+        .success {
+            background-color: #000000;
+            filter: Alpha(opacity=70);
+            position: static;
+            /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+            *zoom: 1;
+            /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+        }
+    }
+</style>
+
+<body>
+    <p class="success">提交成功</p>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var n = 2;
+        // var time = setInterval(function(){
+        //     showTime();
+
+        // },1000);
+        var liuyan = window.parent.document.getElementById("liuyan");
+        var zhezhao = window.parent.document.getElementById("business_zhezhao");
+        var iframe = window.parent.document.getElementById("iframe");
+        $(liuyan).css({ 'width': '170px', 'height': '50px' });
+        $(iframe).css({ 'width': '170px', 'height': '50px' });
+        $(zhezhao).css('display', 'none');
+
+        function showTime() {
+            n--;
+            $('.pp').html(n + ' 秒后关闭窗口');
+            if (n == 0) {
+                liuyan.style.display = "none";
+
+                $(iframe).attr('src', './shared/message.html');
+            }
+
+        }
+    })
+    </script>
+</body>
+
+</html>

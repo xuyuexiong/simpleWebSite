@@ -111,7 +111,7 @@ a:hover {
    
 
 .second_nav {
-    background: #2d3e50;
+    background-color: rgba(45, 62, 80, 0.5);
     height: 50px;
     position: absolute;
     top: 80px;
@@ -824,4 +824,34 @@ footer {
     color: #999999;
     font-size: 14px;
     text-align: center;
+}
+
+/*模态窗，留言板*/
+
+#business_zhezhao {
+    position: fixed;
+    background: #000000;
+    opacity: 0.3;
+    filter:Alpha(opacity=30);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+#liuyan {
+    position: fixed;
+    background: #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    display: none;
 }

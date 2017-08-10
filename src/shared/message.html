@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<style type="text/css">
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #ffffff;
+    font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.message {
+    width: 100%;
+    height: 100%;
+    margin-top: -30px;
+}
+
+.message_top {
+    text-align: center;
+}
+
+.message_title {
+    font-size: 30px;
+    color: #2d3e50;
+    line-height: 65px;
+}
+
+.message_drumbeating {
+    font-size: 24px;
+    color: #7c8690;
+    line-height: 30px;
+}
+
+.message_input {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.message_input ul {
+    list-style: none;
+    margin-top: 30px;
+    margin: 0;
+}
+
+.message_input li {
+    padding-bottom: 30px;
+}
+
+.message_input label {
+    font-size: 18px;
+    color: #7c8690;
+}
+
+.message_input input {
+    background: #dee8f2;
+    border: none;
+    height: 60px;
+    width: 500px;
+    padding: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+#check_name {
+    font-size: 14px;
+    color: red;
+    float: right;
+    display: none;
+}
+
+#check_phone {
+    font-size: 14px;
+    color: red;
+    float: right;
+    display: none;
+}
+
+#check_opinion {
+    font-size: 14px;
+    color: red;
+    float: right;
+    display: none;
+}
+
+.submit {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.submit button {
+    width: 300px;
+    height: 60px;
+    background: #2683f5;
+    color: #ffffff;
+    font-size: 24px;
+    border: none;
+    padding: 0;
+    font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.message_input input:focus,
+.submit button:focus {
+    outline: none;
+}
+</style>
+
+<body>
+    <form class="message" action="./message_success.html" method="get">
+        <div class="message_top">
+            <p class="message_title">感谢你的留言</p>
+            <p class="message_drumbeating">您的意见我们非常重视</p>
+        </div>
+        <div class="message_input">
+            <ul>
+                <li>
+                    <label>姓名<span id="check_name">*请填写姓名</span></label>
+                    <input type="name" name="name" id="name" autocomplete="off">
+                </li>
+                <li>
+                    <label>电话<span id="check_phone">*请填写电话</span></label>
+                    <input type="phone" name="phone" id="phone" autocomplete="off">
+                </li>
+                <li>
+                    <label>意见<span id="check_opinion">*请填写意见</span></label>
+                    <input type="opinion" name="opinion" id="opinion" autocomplete="off">
+                </li>
+            </ul>
+        </div>
+        <div class="submit">
+            <button type="submit">提交</button>
+        </div>
+    </form>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.message_input input').blur(function() {
+            if ($(this).is('#name')) {
+                if ($('#name').val() == '') {
+                    $("#check_name").css('display', 'block');
+                } else {
+                    $("#check_name").css('display', 'none');
+                }
+            }
+            if ($(this).is('#phone')) {
+                if ($('#phone').val() == '') {
+                    $("#check_phone").css('display', 'block');
+                } else {
+                    $("#check_phone").css('display', 'none');
+                }
+            }
+            if ($(this).is('#opinion')) {
+                if ($('#opinion').val() == '') {
+                    $("#check_opinion").css('display', 'block');
+                } else {
+                    $("#check_opinion").css('display', 'none');
+                }
+            }
+
+
+        }).keyup(function() {
+            $(this).triggerHandler("blur");
+        }).focus(function() {
+            $(this).triggerHandler("blur");
+        });
+
+        $('.submit').click(function() {
+            $(".message_input input").trigger('blur');
+
+            if ($('#check_name').css('display') == 'block') {
+                return false;
+            }
+            if ($('#check_phone').css('display') == 'block') {
+                return false;
+            }
+            if ($('#check_opinion').css('display') == 'block') {
+                return false;
+            }
+
+        });
+    })
+    </script>
+</body>
+
+</html>
