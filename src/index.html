@@ -139,6 +139,8 @@ p {
             </div>
         </div>
     </div>
+
+    <!-- <button id="111">111</button> -->
     <!-- 轮播图 -->
     <div class="idx_bannerbox">
         <div class="banner">
@@ -159,7 +161,7 @@ p {
             </ul>
         </div>
         <div class="banner_tb">
-            <ul>
+            <ul class="clearfix">
                 <li><span class="on"></span></li>
                 <li><span></span></li>
             </ul>
@@ -301,28 +303,30 @@ p {
             </div>
             <div class="partner_logo">
                 <div class="clearfix">
-                    <div class="pull-left partner_logo_wz partnerlogo">
+                    <div class="pull-left partnerlogo" style="width: 230px;height: 60px;">
                         <img src="./assets/img/partner/wanke.png">
                     </div>
-                    <div class="pull-left partner_logo_wz partnerlogo">
+                    <div class="pull-left partner_logo_left partnerlogo">
                         <img src="./assets/img/partner/baoli.png">
                     </div>
-                    <div class="pull-left partner_logo_wz partnerlogo">
+                    <div class="pull-left partner_logo_right partnerlogo">
                         <img src="./assets/img/partner/xinli.png">
                     </div>
-                    <div class="pull-left partnerlogo">
+                    <div class="pull-right partnerlogo">
                         <img src="./assets/img/partner/shimao.png">
                     </div>
-                    <div class="pull-left partner_logo_wz partnerlogo">
+                </div>
+                <div class="clearfix">
+                    <div class="pull-left partnerlogo">
                         <img src="./assets/img/partner/biguiyuan.png">
                     </div>
-                    <div class="pull-left partner_logo_wz partnerlogo">
+                    <div class="pull-left partner_logo_left partnerlogo">
                         <img src="./assets/img/partner/lvdi.png">
                     </div>
-                    <div class="pull-left partner_logo_wz partnerlogo">
+                    <div class="pull-left partner_logo_right partnerlogo">
                         <img src="./assets/img/partner/languang.png">
                     </div>
-                    <div class="pull-left partnerlogo">
+                    <div class="pull-right partnerlogo">
                         <img src="./assets/img/partner/zhonghang.png">
                     </div>
                 </div>
@@ -330,21 +334,24 @@ p {
         </div>
     </div>
     <!-- 尾部菜单 -->
-    <footer>
-    </footer>
+    <div class="footer">
+    </div>
     <div id="liuyan">
         <iframe src="./shared/message.html" scrolling="no" width="800" height="600" style="border: 0;" id="iframe" frameborder="0"></iframe>
     </div>
     <div id="business_zhezhao"></div>
-
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./shared/footer.js"></script>
+    <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
     <script src="./assets/js/index.js"></script>
+    <script src="./shared/footer.js"></script>
     <script type="text/javascript">
     jQuery(".slideTxtBox").slide();
     $(function() {
+        
+        $('#111').click(function(){
+            $(".second_nav").stop(true, true).slideDown("fast");
+        });
         //初始化导航栏高亮
         var navLeft = $('.nav_active').position().left;
         $('.navline').css({ 'left': navLeft, 'display': 'block' });
@@ -364,13 +371,13 @@ p {
         $('.busines_words').click(function() {
 
             $('#business_zhezhao').css('display', 'block');
-            $('#liuyan').css({'width':'800px','height':'600px','display':'block'});
-            $('#iframe').css({'width':'800px','height':'600px'});
+            $('#liuyan').css({ 'width': '800px', 'height': '600px', 'display': 'block' });
+            $('#iframe').css({ 'width': '800px', 'height': '600px' });
 
         });
 
         $('#business_zhezhao').click(function() {
-            $('iframe').attr('src','./shared/message.html');
+            $('iframe').attr('src', './shared/message.html');
             $('#business_zhezhao').css('display', 'none');
             $('#liuyan').css('display', 'none');
         });

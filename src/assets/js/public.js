@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 17:14:55
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-08-07 15:49:04
+* @Last Modified time: 2017-08-12 15:27:51
 */
 
 $(function(){
@@ -14,7 +14,6 @@ $(function(){
         $(this).prev("li").addClass('prev').siblings().removeClass('prev');
         navlinewidth = $(this).width();
         offsetli = $(this).position().left;
-        offsettop = $(this).position().top;
         navWidth = $('.first_nav').width();
         navRight = $('.first_nav').width()-offsetli-$(this).width();
         index = $('.navlist li').index(this);
@@ -26,7 +25,6 @@ $(function(){
         	$('.sNav div').eq(index).css('right',navRight);
         }
 
-        $(".navline").css('top', offsettop);
         $(".navline").css({ 'width': navlinewidth }).stop().animate({ 'left': offsetli }, 200);
 
     });
@@ -59,6 +57,14 @@ $(function(){
 
     //底部导航
     $.get('../../shared/footer.html', function(data) {
-        $('footer').html(data);
+        $('.footer').html(data);
     });
+
+    //轮播图插件
+    var mySwiper = new Swiper('.swiper-container',{
+            loop: true,
+            autoplay: 5000,
+            speed: 1000
+        });
+
 })

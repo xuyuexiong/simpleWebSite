@@ -1,13 +1,21 @@
 $(function() {
 
     //导航条高亮
+    $(".navline").css('left', $('.navlist').position().left);
+    $(".navline").width($('.navlist li').width());
+    $(".navline").show();
+
+
+
     $('.navlist li').hover(function() {
         $('.navlist li').removeClass('nav_active');
         $(this).addClass('current').siblings().removeClass('current');
         $(this).prev("li").addClass('prev').siblings().removeClass('prev');
         navlinewidth = $(this).width();
         offsetli = $(this).position().left;
-        offsettop = $(this).position().top;
+        $(".navline").stop().animate({ left: offsetli, width: navlinewidth }, 300);
+        // $(".navline").css({ 'width': navlinewidth }).css('left', offsetli);
+
         navWidth = $('.first_nav').width();
         navRight = $('.first_nav').width() - offsetli - $(this).width();
         index = $('.navlist li').index(this);
@@ -19,8 +27,6 @@ $(function() {
             $('.sNav div').eq(index).css('right', navRight);
         }
 
-        $(".navline").css('top', offsettop);
-        $(".navline").css({ 'width': navlinewidth }).stop().animate({ 'left': offsetli }, 200);
 
     });
 
@@ -36,6 +42,7 @@ $(function() {
 
     $(".navbg").hover(function() {}, function() {
         $(".second_nav").stop(true, false).slideUp();
+
     }).trigger("mouseleave");
 
     function Show(index) {
@@ -45,6 +52,7 @@ $(function() {
             if (number > 1) {
                 $(".second_nav").stop(true, true).slideDown("fast");
                 $(div).eq(index).show().siblings().hide();
+                // alert('a') b
             } else {
                 $(".second_nav").stop(true, false).slideUp();
             }
@@ -79,7 +87,7 @@ $(function() {
 
     //引入底部菜单
     $.get('../../shared/footer.html', function(data) {
-        $('footer').html(data);
+        $('.footer').html(data);
     });
 
 
