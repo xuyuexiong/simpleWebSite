@@ -61,14 +61,18 @@
     <script type="text/javascript">
     $(function() {
         var n = 2;
-        // var time = setInterval(function(){
-        //     showTime();
+        var time = setInterval(function(){
+            showTime();
 
-        // },1000);
+        },1000);
         var liuyan = window.parent.document.getElementById("liuyan");
         var zhezhao = window.parent.document.getElementById("business_zhezhao");
         var iframe = window.parent.document.getElementById("iframe");
+
+        var liuyanHeight = window.parent.document.body.clientHeight;
+        var liuyanWidth = window.parent.document.body.clientWidth;
         $(liuyan).css({ 'width': '170px', 'height': '50px' });
+        $(liuyan).css({ 'left': liuyanWidth / 2 - $('#liuyan').width()/2, 'top': liuyanHeight / 2 - $('#liuyan').height()/2 });
         $(iframe).css({ 'width': '170px', 'height': '50px' });
         $(zhezhao).css('display', 'none');
 

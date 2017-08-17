@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
     <meta charset="utf-8">
@@ -18,6 +18,7 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    /*margin-top: -30px;*/
 }
 
 a:hover {
@@ -27,7 +28,6 @@ a:hover {
 .message {
     width: 100%;
     height: 100%;
-    margin-top: -30px;
 }
 
 .message_top {
@@ -60,11 +60,13 @@ a:hover {
 
 .message_input li {
     padding-bottom: 30px;
+    position: relative;
 }
 
 .message_input label {
     font-size: 18px;
     color: #7c8690;
+    position: relative;
 }
 
 .message_input input {
@@ -76,26 +78,30 @@ a:hover {
     font-size: 16px;
     padding-left: 10px;
     border-radius: 10px;
+    line-height:60px\9;
 }
 
 #check_name {
     font-size: 14px;
     color: red;
-    float: right;
+    position: absolute;
+    right: 0px;
     display: none;
 }
 
 #check_phone {
     font-size: 14px;
     color: red;
-    float: right;
+    position: absolute;
+    right: 0px;
     display: none;
 }
 
 #check_opinion {
     font-size: 14px;
     color: red;
-    float: right;
+    position: absolute;
+    right: 0px;
     display: none;
 }
 
@@ -121,6 +127,10 @@ a:hover {
 .submit button:focus {
     outline: none;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 </style>
 
 <body>
@@ -132,15 +142,18 @@ a:hover {
         <div class="message_input">
             <ul>
                 <li>
-                    <label>姓名<span id="check_name">*请填写姓名</span></label>
+                    <span id="check_name">*请填写姓名</span>
+                    <label>姓名</label>
                     <input type="name" name="name" id="name" autocomplete="off">
                 </li>
                 <li>
-                    <label>电话<span id="check_phone">*请填写电话</span></label>
+                    <span id="check_phone">*请填写电话</span>
+                    <label>电话</label>
                     <input type="phone" name="phone" id="phone" autocomplete="off">
                 </li>
                 <li>
-                    <label>意见<span id="check_opinion">*请填写意见</span></label>
+                    <span id="check_opinion">*请填写意见</span>
+                    <label>意见</label>
                     <input type="opinion" name="opinion" id="opinion" autocomplete="off">
                 </li>
             </ul>

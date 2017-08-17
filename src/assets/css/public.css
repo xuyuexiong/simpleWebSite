@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 11:23:53
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-08-12 15:51:07
+* @Last Modified time: 2017-08-17 15:46:32
 */
 
 html,
@@ -35,6 +35,7 @@ p {
 }
 
 
+
 /*导航栏*/
 
 .navbg {
@@ -47,7 +48,7 @@ p {
     z-index: 2;
 }
 
-.nav_active a {
+.nav_active {
     color: #ffffff!important;
 }
 
@@ -64,11 +65,11 @@ p {
 
 .logo {
     display: block;
-    height: 100px;
+    height: 80px;
 }
 
 .logo img {
-    padding: 30px 0 30px 0;
+    padding: 20px 0 20px 0;
 }
 
 .first_nav {
@@ -89,8 +90,8 @@ p {
 
 .navlist li a {
     padding: 0 15px 0 15px;
-    line-height: 100px;
-    height: 100px;
+    line-height: 80px;
+    height: 80px;
     display: block;
     font-size: 16px;
     color: #2d3e50;
@@ -115,47 +116,33 @@ p {
     position: absolute;
     display: none;
     width: 94px;
-    height: 100px;
+    height: 80px;
     background: #2683f5;
     top: 0;
     z-index: 1;
     transition: width .6s;
 }
-
-@media screen and (min-width: 1200px) {
-    .second_nav {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .pr {
-        min-width: 1200px;
-    }
-}
-
 .second_nav {
     background-color: rgba(45, 62, 80, 0.5);
-    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F2D3E50,endcolorstr=#7F2D3E50); 
-    height: 60px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F2D3E50, endcolorstr=#7F2D3E50);
+    height: 50px;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 0;
     z-index: 999;
-    display: block;
-
+    width: 100%;
 }
 
 .pr {
     position: relative;
-    height: 60px;
+    height: 50px;
     width: 1200px;
 }
 
 .inner_nav {
     list-style: none;
     padding: 0;
-    margin:  0;
+    margin: 0;
     top: 0px;
     left: 0px;
     z-index: 999;
@@ -163,27 +150,31 @@ p {
 
 .inner_nav li {
     float: left;
-    line-height: 60px;
+    line-height: 50px;
     margin: 0 18px;
 }
 
 .inner_nav li a {
-	float: left;
+    float: left;
     color: #ffffff;
     font-size: 14px;
     display: block;
 }
-.inner_nav .second_active{
-	color: #01ccff;
+
+.inner_nav .second_active {
+    color: #01ccff;
 }
-.inner_nav li a:hover{
-	color: #01ccff;
+
+.inner_nav li a:hover {
+    color: #01ccff;
 }
+
 .pr>div {
     display: none;
     position: absolute;
     top: 0px;
 }
+
 
 
 
@@ -196,25 +187,55 @@ p {
     min-width: 1200px;
     z-index: 1;
     min-width: 1200px;
-}
-.swiper-wrapper{
-    position: relative;
-    height: 480px!important;
-}
-.swiper-slide{
-    height: 480px!important;
-}
-.banner_box {
     height: 480px;
-    display: block;
-    width: 1920px;
-    background-image: url(../img/contact/contact_banner.png);
-    background-repeat: no-repeat;
-    background-position: center center;
+}
+.nivoSlider {
+    position: relative;
 }
 
+.nivoSlider img {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    width: 1920px;
+    height: 480px;
+}
 
+.nivoSlider a.nivo-imageLink {
+    margin: 0px;
+    padding: 0px;
+    border: 0px currentColor;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    z-index: 6;
+}
 
+.nivoSlider {
+    position: relative;
+}
+
+.nivoSlider img {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.nivo-slice {
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+
+.nivo-box {
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
 /*内容*/
 
 .middle {
@@ -230,54 +251,172 @@ p {
     margin-bottom: 40px;
     z-index: 10;
 }
-.content_box{
+
+.content_box {
     margin: 40px 40px 0 40px;
-    height: 800px;
 }
-.content_title{
+
+.content_title {
     height: 50px;
     line-height: 50px;
 }
-.content_title_b{
+
+.content_title_b {
     color: #2683f5;
     font-size: 30px;
 }
-.content_title_s{
+
+.content_title_s {
     color: #2683f5;
     font-size: 18px;
     line-height: 40px;
     padding-top: 10px;
 }
-.xtb_home{
+
+.content_list {
+    padding-top: 50px;
+    position: relative;
+}
+
+.content_list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content_list ul li {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: dashed 1px #e1e1e1;
+}
+
+.content_time {
+    width: 90px;
+    height: 140px;
+    background: #969ea7;
+    margin-right: 40px;
+}
+
+.content_word {
+    width: 990px;
+}
+
+.content_word_title {
+    font-size: 20px;
+    color: #2d3e50;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.content_word_info {
+    position: relative;
+    font-size: 16px;
+    color: #999999;
+    line-height: 30px;
+    height: 90px;
+    width: 990px;
+    overflow: hidden;
+}
+
+.content_page {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.content_page_span{
+    margin: 0 auto;
+    float: none;
+    display: inline-block;
+}
+
+.content_page_span a,
+.content_page_span span {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    background: #969ea7;
+    float: left;
+    cursor: pointer;
+}
+
+.content_page_span a:hover,
+.content_page_span span:hover {
+    background: #2d3e50;
+}
+
+.i_time {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.i_time_day {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.i_time_year {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.xtb_home {
     width: 30px;
     height: 20px;
     display: block;
     margin-right: 3px;
     margin-top: 13px;
-    background:url(../img/contact/xtb_home.png) no-repeat;
+    background: url(../img/contact/xtb_home.png) no-repeat;
 }
-.xtb_jiantou{
+
+.xtb_jiantou {
     margin: 0 2px 0 2px;
     color: #999999;
 }
-.right_title a{
+
+.right_title a {
     color: #999999;
     font-size: 16px;
-} 
-.content_tab{
+}
+
+.content_tab {
     padding-top: 50px;
 }
-.content_info{
+
+.content_info {
     position: relative;
 }
-.content_img{
+
+.content_img {
     padding-top: 25px;
 }
-.content_img img{
+
+.content_img img {
     width: 100%;
     height: auto;
 }
-
+/*新闻内页*/
+.page_title{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.page_image{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.page_info{
+    margin-bottom: 70px;
+}
+.page_info p{
+    text-indent: 40px;font-size: 18px;color: #2d3e50;line-height: 40px;
+}
 
 
 /*底部菜单*/
@@ -438,7 +577,6 @@ p {
     width: 41px;
     position: relative;
     background: url(../img/xtb_flm.png);
-
 }
 
 .hide_flm div {

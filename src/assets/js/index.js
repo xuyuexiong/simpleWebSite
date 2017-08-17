@@ -85,13 +85,6 @@ $(function() {
         $(this).css("opacity", 1);
     });
 
-    //引入底部菜单
-    $.get('../../shared/footer.html', function(data) {
-        $('.footer').html(data);
-    });
-
-
-
     //星星效果
     if (!window.addEventListener) return;
 
