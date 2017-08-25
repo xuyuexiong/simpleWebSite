@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 11:23:53
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-08-17 15:46:32
+* @Last Modified time: 2017-08-25 14:37:25
 */
 
 html,
@@ -417,7 +417,35 @@ p {
 .page_info p{
     text-indent: 40px;font-size: 18px;color: #2d3e50;line-height: 40px;
 }
+/*学院页*/
+.school_content{
+    padding-left: 20px;
+    /*width: 820px;*/
+}
+.school_title{
+    font-size: 24px;
+    color: #2d3e50;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.school_teacher{
+    font-size: 16px;
+    color: #999999;
+    padding-right: 40px;
 
+}
+.school_time{
+    font-size: 16px;
+    color: #999999;
+}
+.school_details{
+    padding-top: 20px;
+}
+.school_details a,
+.school_details a:hover{
+    font-size: 16px;
+    color: #2683f5;
+}
 
 /*底部菜单*/
 

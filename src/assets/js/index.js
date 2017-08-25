@@ -5,8 +5,6 @@ $(function() {
     $(".navline").width($('.navlist li').width());
     $(".navline").show();
 
-
-
     $('.navlist li').hover(function() {
         $('.navlist li').removeClass('nav_active');
         $(this).addClass('current').siblings().removeClass('current');
