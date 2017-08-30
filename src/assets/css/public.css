@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 11:23:53
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-08-25 14:37:25
+* @Last Modified time: 2017-08-30 11:23:07
 */
 
 html,
@@ -33,6 +33,11 @@ a:hover {
 p {
     margin: 0px;
 }
+
+
+
+
+
 
 
 
@@ -122,6 +127,7 @@ p {
     z-index: 1;
     transition: width .6s;
 }
+
 .second_nav {
     background-color: rgba(45, 62, 80, 0.5);
     filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F2D3E50, endcolorstr=#7F2D3E50);
@@ -180,6 +186,11 @@ p {
 
 
 
+
+
+
+
+
 /*轮播图*/
 
 .banner {
@@ -189,6 +200,7 @@ p {
     min-width: 1200px;
     height: 480px;
 }
+
 .nivoSlider {
     position: relative;
 }
@@ -236,12 +248,19 @@ p {
     position: absolute;
     z-index: 5;
 }
+
+
+
+
+
+
 /*内容*/
 
 .middle {
     position: relative;
     min-width: 1200px;
-    z-index: 10;
+    z-index: 1;
+    margin-bottom: 50px;
 }
 
 .middle_content {
@@ -249,7 +268,7 @@ p {
     background: #fff;
     margin-top: -180px;
     margin-bottom: 40px;
-    z-index: 10;
+    z-index: 1;
 }
 
 .content_box {
@@ -325,7 +344,8 @@ p {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.content_page_span{
+
+.content_page_span {
     margin: 0 auto;
     float: none;
     display: inline-block;
@@ -402,50 +422,176 @@ p {
     width: 100%;
     height: auto;
 }
+
+
+
+
+
+
 /*新闻内页*/
-.page_title{
+
+.page_title {
     text-align: center;
     margin-bottom: 35px;
 }
-.page_image{
+
+.page_image {
     text-align: center;
     margin-bottom: 35px;
 }
-.page_info{
+
+.page_info {
     margin-bottom: 70px;
 }
-.page_info p{
-    text-indent: 40px;font-size: 18px;color: #2d3e50;line-height: 40px;
+
+.page_info p {
+    text-indent: 40px;
+    font-size: 18px;
+    color: #2d3e50;
+    line-height: 40px;
 }
+
+
+
+
+
+
 /*学院页*/
-.school_content{
+
+.school_content {
     padding-left: 20px;
     /*width: 820px;*/
 }
-.school_title{
+
+.school_title {
     font-size: 24px;
     color: #2d3e50;
     padding-top: 20px;
     padding-bottom: 15px;
 }
-.school_teacher{
+
+.school_teacher {
     font-size: 16px;
     color: #999999;
     padding-right: 40px;
-
 }
-.school_time{
+
+.school_time {
     font-size: 16px;
     color: #999999;
 }
-.school_details{
+
+.school_details {
     padding-top: 20px;
 }
+
 .school_details a,
-.school_details a:hover{
+.school_details a:hover {
     font-size: 16px;
     color: #2683f5;
 }
+
+/*案例页*/
+
+.case_box {
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.case_label {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.case_label ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.case_label li {
+    float: left;
+    font-size: 18px;
+    color: #999999;
+    padding: 10px 20px;
+    border: #999999 1px solid;
+    margin: 0 10px;
+    display: inline;
+    zoom: 1;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.case_label .case_active {
+    color: #ffffff;
+    background: #2683f5;
+}
+
+.case_img {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.case_img ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden；
+}
+
+.case_list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+    width: 270px;
+}
+
+.case_img .case_img_first {
+    margin-left: 0;
+}
+.case_list img{
+    width: 270px;
+    height: 220px;
+}
+.case_info {
+
+}
+
+.case_mask {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    display: none;
+}
+
+.case_mask_text {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    display: none;
+}
+
+
 
 /*底部菜单*/
 
@@ -506,6 +652,7 @@ p {
 .footer_number {
     float: left;
     height: 175px;
+    padding-left: 110px;
 }
 
 .footer_qr {

@@ -617,18 +617,12 @@ video {
     padding-top: 100px;
 }
 
-.partner_logo_left {
-    padding-left: 82px;
-    padding-right: 41px;
-}
-
-.partner_logo_right {
-    padding-left: 41px;
-    padding-right: 82px;
-}
-
 .partnerlogo {
+    padding-left: 93.3px;
     padding-bottom: 60px;
+}
+.partner_first{
+    padding-left: 0;
 }
 
 
