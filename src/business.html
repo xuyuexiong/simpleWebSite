@@ -10,6 +10,7 @@
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/public.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- 导航栏 -->
     <div class="navbg">
@@ -126,40 +127,19 @@
             </div>
         </div>
     </div>
-    <!-- 轮播图 -->
-    <div class="banner">
-        <div class="theme-default">
-            <div id="slider" class="nivoSlider">
-                <img src="./assets/img/contact/contact_banner.png" />
-                <img src="./assets/img/contact/contact_banner.png" />
-                <img src="./assets/img/contact/contact_banner.png" />
-            </div> 
-        </div>
-    </div>
     <!-- 内容 -->
-    <div class="middle">
-        <div class="container middle_content">
-            <div class="content_box">
-                <div class="content_title">
-                    <div class="pull-left">
-                        <p class="pull-left content_title_b">联系我们</p>
-                        <p class="pull-left content_title_s">/Contact Us</p>
-                    </div>
-                    <div class="pull-right right_title">
-                        <span class="pull-left"><i class="xtb_home"></i></span>
-                        <p class="pull-left"><a href="#">联络我们</a></p>
-                        <span class="pull-left xtb_jiantou"> > </span>
-                        <p class="pull-left"><a href="#">公司总部</a></p>
-                    </div>
+    <div class="middle business">
+        <div class="clearfix">
+            <div class="business_img">
+                <div class="business_title">
+                    <p class="business_title_chinese">盈科行营销代理</p>
+                    <p class="business_title_english">marketing agency</p>
                 </div>
-                <div class="content_tab">
-                    <div class="content_info">
-                        <p style="font-size: 48px;color: #2d3e50;line-height: 50px;">400-025-5559</p>
-                        <p style="font-size: 30px;color: #2d3e50;line-height: 30px;">南昌市红角洲前湖大道盈科大厦18楼</p>
-                    </div>
-                    <div class="content_img">
-                        <img src="./assets/img/contact/ditu.png">
-                    </div>
+            </div>
+            <div class="business_word">
+                <div class="business_info">
+                    <p class="business_info_english">marketing agency</p>
+                    <p class="business_info_chinese">房地产代理公司是指专业为房地产公司（开发商）提供房地产专业的楼盘策划和销售代理的服务机构，业务集中在产品定位、到案场包装、物料设计、媒体计划、广告推广、房地产销售代理、回拢资金等。随着房地产市场的分工的日益细化，房地产代理公司越来越多的参与到房地产行业中，专业的代理公司更受到房地产开发商的青睐和合作。</p>
                 </div>
             </div>
         </div>
@@ -246,15 +226,95 @@
     <script src="./assets/js/public.js"></script>
     <script src="./shared/footer.js"></script>
     <script type="text/javascript">
-        
-        // jQuery(".slideTxtBox").slide();
+    // jQuery(".slideTxtBox").slide();
     </script>
     <script type="text/javascript">
-        $(function(){
-            var navLeft = $('.nav_active').position().left;
-        	$('.navline').css({ 'left': navLeft, 'display': 'block','width':$('.navlist li').eq(2).width()});
-        	$('.sNav div').eq(2).css('left',1200-$('.first_nav').width()+navLeft);
-        })
+    $(function() {
+        var navLeft = $('.nav_active').position().left;
+        $('.navline').css({ 'left': navLeft, 'display': 'block', 'width': $('.navlist li').eq(2).width() });
+        $('.sNav div').eq(2).css('left', 1200 - $('.first_nav').width() + navLeft);
+
+        $(document).ready(function() {
+            var title_top = 0;
+            var title_opacity = 0;
+            var info_bottom = 0;
+            var info_opacity = 0;
+
+            //进场动画
+            if (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE", "")) < 9) {
+
+                var business_title_time = setInterval(function() {
+                    title_top = title_top + 10;
+                    $(".business_title").css('top', title_top);
+                    if (title_top >= 180) {
+                        clearInterval(business_title_time);
+                    }
+                }, 10);
+                var business_opacity_time = setInterval(function() {
+                    title_opacity = title_opacity + 0.02;
+                    $(".business_title").css("opacity", title_opacity);
+                    $(".business_title").css("filter", 'alpha(opacity=' + title_opacity * 100 + ')');
+                    if (title_opacity >= 1) {
+                        clearInterval(business_opacity_time);
+                    }
+
+                }, 10);
+
+                var business_info_time = setInterval(function() {
+                    info_bottom = info_bottom + 15;
+                    $(".business_info").css('bottom', info_bottom);
+                    if (info_bottom >= 400) {
+                        clearInterval(business_info_time);
+                    }
+                }, 10);
+                var info_opacity_time = setInterval(function() {
+                    info_opacity = info_opacity + 0.02;
+                    $(".business_info").css("opacity", info_opacity);
+                    $(".business_info").css("filter", 'alpha(opacity=' + info_opacity * 100 + ')');
+                    if (info_opacity >= 1) {
+                        clearInterval(info_opacity_time);
+                    }
+
+                }, 10);
+
+            } else {
+                var business_title_time = setInterval(function() {
+                    title_top = title_top + 3;
+                    $(".business_title").css('top', title_top);
+                    if (title_top >= 180) {
+                        clearInterval(business_title_time);
+                    }
+                }, 10);
+                var business_opacity_time = setInterval(function() {
+                    title_opacity = title_opacity + 0.01;
+                    $(".business_title").css("opacity", title_opacity);
+                    $(".business_title").css("filter", 'alpha(opacity=' + title_opacity * 100 + ')');
+                    if (title_opacity >= 1) {
+                        clearInterval(business_opacity_time);
+                    }
+
+                }, 10);
+
+                var business_info_time = setInterval(function() {
+                    info_bottom = info_bottom + 4;
+                    $(".business_info").css('bottom', info_bottom);
+                    if (info_bottom >= 400) {
+                        clearInterval(business_info_time);
+                    }
+                }, 10);
+                var info_opacity_time = setInterval(function() {
+                    info_opacity = info_opacity + 0.01;
+                    $(".business_info").css("opacity", info_opacity);
+                    $(".business_info").css("filter", 'alpha(opacity=' + info_opacity * 100 + ')');
+                    if (info_opacity >= 1) {
+                        clearInterval(info_opacity_time);
+                    }
+
+                }, 10);
+            }
+        });
+
+    })
     </script>
 </body>
 

@@ -11,93 +11,107 @@
     <!-- <link href="./assets/css/public.css" rel="stylesheet"> -->
 </head>
 <style type="text/css">
-    p{
-        padding: 0;
-        margin: 0;
-    }
-    body{
-        font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
-    }
-    .content{
-        position: relative;
-        min-width: 1400px;
-    }
-    .flm_img{
-        /*width: 1920px;*/
-    }
-    .content_case{
-        position: relative;
-        height: 740px;
-        background: #ffffff;
-    }
-    .case_box{
-        width: 1200px;
-        margin: 0 auto;
-    }
-    .case_title{
-        text-align: center;
-        padding-bottom: 20px; 
-    }
-    .case_img{
+p {
+    padding: 0;
+    margin: 0;
+}
 
-    }
-    .case_img ul{
-        list-style: none;
-        margin: 0;
-    }
-    .case_img li{
-        float: left;
-        position: relative;
-    }
-    .mask{
-        width: 300px;
-        height: 350px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #000;
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    .text{
-        font-size: 28px;
-        color: #ffffff;
-        width: 300px;
-        height: 350px;
-        line-height: 350px;
-        text-align: center;
-        cursor: default;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    .case_info{
-        position: static;
-        display: block;
-        z-index: 2;
-        width: 300px;
-        height: 350px;
-    }
-    .case_advantage{
-        padding-top: 70px;
-        position: relative;
-        height: 160px;
-    }
-    .case_advantage ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    .case_advantage li{
-        float: left;
-        width: 300px;
-        cursor: default;
-    }
+body {
+    font-family: "微软雅黑", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.content {
+    position: relative;
+    min-width: 1400px;
+}
+
+.flm_img {
+    /*width: 1920px;*/
+}
+
+.content_case {
+    position: relative;
+    height: 740px;
+    background: #ffffff;
+}
+
+.case_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.case_title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.case_img {}
+
+.case_img ul {
+    list-style: none;
+    margin: 0;
+}
+
+.case_img li {
+    float: left;
+    position: relative;
+}
+
+.mask {
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.text {
+    font-size: 28px;
+    color: #ffffff;
+    width: 300px;
+    height: 350px;
+    line-height: 350px;
+    text-align: center;
+    cursor: default;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.case_info {
+    position: static;
+    display: block;
+    z-index: 2;
+    width: 300px;
+    height: 350px;
+}
+
+.case_advantage {
+    padding-top: 70px;
+    position: relative;
+    height: 160px;
+}
+
+.case_advantage ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.case_advantage li {
+    float: left;
+    width: 300px;
+    cursor: default;
+}
 </style>
+
 <body>
     <!-- 内容 -->
     <div class="content">
@@ -120,7 +134,6 @@
                                     新力熙园
                                 </div>
                             </div>
-                            
                         </li>
                         <li>
                             <div class="case_info">
@@ -182,54 +195,52 @@
             </div>
         </div>
     </div>
-
     <script src="./assets/js/jquery.min.js"></script>
-<!--     <script src='./assets/js/jquery.nivo.slider.pack.js'></script>
+    <!--     <script src='./assets/js/jquery.nivo.slider.pack.js'></script>
     <script src="./assets/js/jquery.SuperSlide.2.1.1.js"></script> -->
     <!-- <script src="./assets/js/public.js"></script> -->
     <script type="text/javascript">
-        
-        // jQuery(".slideTxtBox").slide();
+    // jQuery(".slideTxtBox").slide();
     </script>
     <script type="text/javascript">
-        $(function(){
-            $('.case_img li').hover(function(){
-                index = $('.case_img li').index(this);
+    $(function() {
+        $('.case_img li').hover(function() {
+            index = $('.case_img li').index(this);
+            // 遮照效果
+            var a = 0;
+            v = setInterval(function() {
 
-                var a = 0;
-                v =setInterval(function(){
-                    
-                   a=a+0.2;
-                   $('.mask').eq(index).css("opacity", a);
-                   $('.mask').eq(index).css("filter", 'alpha(opacity='+a*100+')');
+                a = a + 0.2;
+                $('.mask').eq(index).css("opacity", a);
+                $('.mask').eq(index).css("filter", 'alpha(opacity=' + a * 100 + ')');
 
-                   if (a >= 0.6) {
-                        clearInterval(v);
-                    }
-                },60);
+                if (a >= 0.6) {
+                    clearInterval(v);
+                }
+            }, 60);
 
-                var b = 0;
-                z =setInterval(function(){
-                    
-                   b=b+0.2;
-                   $('.text').eq(index).css("opacity", b);
-                   $('.text').eq(index).css("filter", 'alpha(opacity='+b*100+')');
+            var b = 0;
+            z = setInterval(function() {
 
-                   if (b >= 1) {
-                        clearInterval(z);
-                    }
-                },60);
+                b = b + 0.2;
+                $('.text').eq(index).css("opacity", b);
+                $('.text').eq(index).css("filter", 'alpha(opacity=' + b * 100 + ')');
 
-            },function(){
-                clearInterval(v);
-                clearInterval(z);
-                $('.mask').eq(index).css('opacity','0');
-                $('.mask').eq(index).css('filter','alpha(opacity=0)');
-                $('.text').eq(index).css('opacity','0');
-                $('.text').eq(index).css('filter','alpha(opacity=0)');
+                if (b >= 1) {
+                    clearInterval(z);
+                }
+            }, 60);
 
-            });
-        })
+        }, function() {
+            clearInterval(v);
+            clearInterval(z);
+            $('.mask').eq(index).css('opacity', '0');
+            $('.mask').eq(index).css('filter', 'alpha(opacity=0)');
+            $('.text').eq(index).css('opacity', '0');
+            $('.text').eq(index).css('filter', 'alpha(opacity=0)');
+
+        });
+    })
     </script>
 </body>
 
