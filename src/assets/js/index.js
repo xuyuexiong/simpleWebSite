@@ -60,13 +60,11 @@ $(function() {
     //合作伙伴商标变色
     var time
     $('.partnerlogo img').hover(function() {
-        var str = $(this).attr('src');
-        if (str.indexOf("color") < 0) {
-            var ar = str.split('.');
-            ar[ar.length - 2] = ar[ar.length - 2] + '_color';
-            ar = ar.join('.');
-        }
-        $(this).attr('src', ar);
+
+        var str = $(this).attr('data-src');
+        var src_color = str.split('|');
+
+        $(this).attr('src', src_color[1]);
         var thisObj = $(this)
         var n = 0.2;
         time = setInterval(function() {
@@ -77,8 +75,10 @@ $(function() {
             }
         }, 10)
     }, function() {
-        var ar = $(this).attr('src').split("_")[0] + ".png";
-        $(this).attr('src', ar);
+        var str = $(this).attr('data-src');
+        var src_color = str.split('|');
+        $(this).attr('src', src_color[0]);
+
         clearInterval(time)
         $(this).css("opacity", 1);
     });

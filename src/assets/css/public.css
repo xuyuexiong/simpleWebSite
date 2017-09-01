@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 11:23:53
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-08-31 14:20:30
+* @Last Modified time: 2017-09-01 17:58:26
 */
 
 html,
@@ -33,12 +33,6 @@ a:hover {
 p {
     margin: 0px;
 }
-
-
-
-
-
-
 
 
 
@@ -184,15 +178,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
 /*轮播图*/
 
 .banner {
@@ -250,10 +235,6 @@ p {
     position: absolute;
     z-index: 5;
 }
-
-
-
-
 
 
 
@@ -428,10 +409,6 @@ p {
 
 
 
-
-
-
-
 /*新闻内页*/
 
 .page_title {
@@ -454,10 +431,6 @@ p {
     color: #2d3e50;
     line-height: 40px;
 }
-
-
-
-
 
 
 
@@ -495,6 +468,7 @@ p {
     font-size: 16px;
     color: #2683f5;
 }
+
 
 
 /*案例页*/
@@ -598,6 +572,7 @@ p {
 }
 
 
+
 /*业务服务*/
 
 .business {
@@ -626,14 +601,12 @@ p {
     width: 600px;
     height: 180px;
     position: absolute;
-    left: 50%; 
+    left: 50%;
     margin-left: -300px;
     text-align: center;
     /*top: 180px;*/
     opacity: 0;
     filter: alpha(opacity=0);
-
-
 }
 
 .business_title_chinese {
@@ -648,27 +621,199 @@ p {
     line-height: 45px;
     color: #ffffff;
 }
-.business_info{
+
+.business_info {
     width: 550px;
     position: absolute;
     /*bottom: 400px;*/
     left: 50px;
     opacity: 0;
     filter: alpha(opacity=0);
-
 }
-.business_info_english{
+
+.business_info_english {
     font-size: 36px;
     line-height: 40px;
     color: #ffffff;
     padding-bottom: 40px;
 }
-.business_info_chinese{
+
+.business_info_chinese {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
     letter-spacing: 3px;
 }
+
+
+/*公益圈*/
+
+.circle_box {
+    width: 1200px;
+}
+
+.circle_img {
+    background: url(../img/circle/circle_01.png) no-repeat center;
+    width: 100%;
+    height: 640px;
+}
+
+.circle_img_box {
+    padding-top: 180px;
+}
+
+.circle_img_word {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 55px;
+    padding-bottom: 10px;
+}
+
+.circle_title {
+    position: relative;
+    background: #ffffff;
+    margin-top: -40px;
+    padding-bottom: 40px;
+}
+
+.circle_title_zhu {
+    font-size: 36px;
+    color: #2d3e50;
+    line-height: 45px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.circle_title_fu {
+    font-size: 18px;
+    color: #2d3e50;
+    line-height: 30px;
+    text-align: center;
+}
+
+.circle_new {
+    position: relative;
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+.circle_new_top {
+    padding: 30px 30px 20px 30px;
+}
+
+.circle_new_left {
+    float: left;
+    font-size: 24px;
+    color: #2d3e50;
+    line-height: 30px;
+}
+
+.circle_new_right {
+    float: right;
+    font-size: 14px;
+    color: #2683f5;
+    padding-top: 10px;
+}
+
+.circle_new_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.circle_new_list li {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+.circle_new .circle_new_list img {
+    width: 240px!important;
+    height: 140px!important;
+    max-width: none!important;
+}
+
+.circle_new_list p {
+    font-size: 14px;
+    color: #2683f5;
+    padding-top: 10px;
+}
+
+.circle_social {
+    position: relative;
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+.circle_social_left {
+    width: 600px;
+    float: left;
+}
+
+.circle_social_left img {
+    width: 600px!important;
+    height: 375px!important;
+    max-width: none!important;
+}
+
+.circle_social_right {
+    width: 600px;
+    float: left;
+}
+
+.circle_social_title {
+    padding: 30px 20px 0 20px;
+}
+
+.social_title_left {
+    float: left;
+    font-size: 24px;
+    color: #2d3e50;
+    line-height: 30px;
+}
+
+.social_title_right {
+    float: right;
+    font-size: 14px;
+    color: #2683f5;
+    line-height: 20px;
+}
+
+.circle_social_list {
+    margin: 0;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.circle_social_list li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: solid 1px #e1e2e3;
+}
+
+.circle_social_list .last_list {
+    border-bottom: none;
+}
+
+.social_list_left {
+    font-size: 16px;
+    color: #2d3e50;
+    line-height: 20px;
+    float: left;
+    vertical-align: middle;
+}
+
+.social_list_right {
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+    float: right;
+    vertical-align: middle;
+}
+
+
 /*底部菜单*/
 
 .footer {
