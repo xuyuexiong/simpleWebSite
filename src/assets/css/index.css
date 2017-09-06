@@ -20,6 +20,7 @@ a:hover {
 
 
 
+
 /*导航栏*/
 
 .navbg {
@@ -161,6 +162,7 @@ a:hover {
     position: absolute;
     top: 0px;
 }
+
 
 
 /*轮播图*/
@@ -351,6 +353,7 @@ video {
 
 
 
+
 /*宣传片*/
 
 .content {
@@ -420,6 +423,7 @@ video {
 }
 
 
+
 /*咨询中心*/
 
 .introduction {
@@ -448,6 +452,12 @@ video {
     height: 400px;
     width: 300px;
     background: #ffffff;
+}
+
+.about_ykh img {
+    width: 300px;
+    height: 150px;
+    max-width: none!important;
 }
 
 .about_ykh_title {
@@ -481,6 +491,12 @@ video {
     height: 400px;
     width: 300px;
     background: #ffffff;
+}
+
+.busines_img img {
+    width: 300px;
+    height: 150px;
+    max-width: none!important;
 }
 
 .busines_title {
@@ -582,6 +598,7 @@ video {
 
 
 
+
 /*合作伙伴*/
 
 .partner {
@@ -621,9 +638,16 @@ video {
     padding-left: 93.3px;
     padding-bottom: 60px;
 }
-.partner_first{
+.partnerlogo img{
+    width: 230px!important;
+    height: 60px!important;
+    max-width: none!important;
+}
+
+.partner_first {
     padding-left: 0;
 }
+
 
 
 /*底部菜单*/
@@ -833,6 +857,7 @@ video {
     font-size: 14px;
     text-align: center;
 }
+
 
 
 

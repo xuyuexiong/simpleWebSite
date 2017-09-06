@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 11:23:53
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-09-01 17:58:26
+* @Last Modified time: 2017-09-04 11:51:26
 */
 
 html,
@@ -292,6 +292,11 @@ p {
     padding-bottom: 30px;
     border-bottom: dashed 1px #e1e1e1;
 }
+.content_list li img{
+    width: 240px;
+    height: 140px;
+    max-width: none!important;
+}
 
 .content_time {
     width: 90px;
@@ -403,7 +408,7 @@ p {
 }
 
 .content_img img {
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
 }
 
@@ -581,13 +586,16 @@ p {
 
 .business_img {
     float: left;
-    background: url(../img/business/business_01.png) no-repeat center;
     width: 50%;
     width: 49.999%\9;
     height: 800px;
     position: relative;
 }
-
+.business_img img{
+    width: 960px;
+    height: 800px;
+    max-width: none!important;
+}
 .business_word {
     float: left;
     width: 50%;
