@@ -1032,3 +1032,38 @@ p {
     font-size: 14px;
     text-align: center;
 }
+
+/*成功案例内页*/
+.case_page_box{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 50px;
+}
+.cp_img{
+    padding: 40px 20px 80px;
+    float: left;
+    width: 450px;
+}
+.cp_img img{
+    width: 450px!important;
+    max-width: none!important;
+}
+
+.cp_word{
+    float: left;
+    padding: 40px 20px 80px;
+    width: 670px;
+}
+.cp_title{
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.cp_info{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-indent: 36px;
+}
