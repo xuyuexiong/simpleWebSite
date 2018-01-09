@@ -2,7 +2,7 @@
 * @Author: xuyuexiong
 * @Date:   2017-08-04 11:23:53
 * @Last Modified by:   xuyuexiong
-* @Last Modified time: 2017-09-04 11:51:26
+* @Last Modified time: 2017-11-15 16:12:18
 */
 
 html,
@@ -499,21 +499,22 @@ p {
     *zoom: 1;
     *display: inline;
 }
-
-.case_label li {
+.case_label li{
     float: left;
+    margin: 0 10px;
+}
+.case_label a {
     font-size: 18px;
     color: #999999;
     padding: 10px 20px;
     border: #999999 1px solid;
-    margin: 0 10px;
-    display: inline;
+    display: block;
     zoom: 1;
     border-radius: 50px;
     cursor: pointer;
 }
 
-.case_label .case_active {
+.case_label .case_active a {
     color: #ffffff;
     background: #2683f5;
 }
